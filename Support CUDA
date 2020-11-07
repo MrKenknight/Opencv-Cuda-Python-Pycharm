@@ -29,3 +29,4 @@ Code check:
           print(cv2.__version__)
           cv2.cuda.getCudaEnabledDeviceCount()
   (python) ...()
+    Creat project python with Conda environment
