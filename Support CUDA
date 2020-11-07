@@ -1,0 +1,31 @@
+Requirements:
+  1.Anaconda: https://www.anaconda.com/products/individual
+  2.Visualstudio: https://visualstudio.microsoft.com/downloads/
+  3.Cmake: https://cmake.org/download/
+  (Windows win64-x64 Installer: Installer tool has changed. Uninstall CMake 3.4 or lower first!)
+  4.Opencv: https://opencv.org/releases/
+  (download Sources)
+  5.Opencv-contrib: https://github.com/opencv/opencv_contrib
+  (click master and select tag suitable with Opencv version)
+  ---CHECK VERSION CARD NVIDIA---
+  (https://en.wikipedia.org/wiki/CUDA)
+  6.Download CUDA: https://developer.nvidia.com/cuda-toolkit-archive
+  7.cuDNN: https://developer.nvidia.com/rdp/cudnn-archive
+  ---COPPY FILE cuDNN to CUDA---
+  https://www.youtube.com/watch?v=PlW9zAg4cx8
+  (2:07 - 2:22)
+Note:
+  Cmake: OPENCV_EXTRA_MODULES_PATH (should coppy adress and change "\" by "/"  )
+  Opencv: - uninstall Opencv before settup (because Anaconda have ones)
+          - Settup like (video) and Creat Environment like (web)
+Step by step:
+  (web)   https://www.learnopencv.com/install-opencv3-on-windows/
+  (video) https://www.youtube.com/watch?v=tjXkW0-4gME
+
+
+Code check:
+  (cmd):  python
+          import cv2
+          print(cv2.__version__)
+          cv2.cuda.getCudaEnabledDeviceCount()
+  (python) ...()
